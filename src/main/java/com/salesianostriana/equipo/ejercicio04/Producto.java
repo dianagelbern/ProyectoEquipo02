@@ -20,7 +20,7 @@ public class Producto {
     private int descuento;
     private double pvp;
 
-
+    @ElementCollection
     private List<String> imagenes;
 
     @ManyToMany
