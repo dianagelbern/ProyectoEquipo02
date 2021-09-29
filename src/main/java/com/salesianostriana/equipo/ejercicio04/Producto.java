@@ -18,6 +18,8 @@ public class Producto {
     private String nombre;
     private int descuento;
     private double pvp;
+
+    @ElementCollection
     private String imagenes;
 
     @ManyToOne
@@ -30,5 +32,5 @@ public class Producto {
         this.pvp = pvp;
         this.imagenes = imagenes;
     }
-    
+
 }
