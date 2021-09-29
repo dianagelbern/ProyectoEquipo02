@@ -4,7 +4,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+
 import java.util.Collections;
+
+
 import java.util.List;
 
 @Entity
@@ -21,18 +24,25 @@ public class Producto {
     private int descuento;
     private double pvp;
 
+
     @ElementCollection
     private List<String> imagenes;
 
-    @ManyToOne
+
+
+
+    private List<String> imagenes;
+
+    @ManyToMany
     private Categoria categoria;
 
-    public Producto(Long id, String nombre, int descuento, double pvp, String imagenes) {
-        this.id = id;
+    public Producto(String nombre, int descuento, double pvp, List<String> imagenes) {
         this.nombre = nombre;
         this.descuento = descuento;
         this.pvp = pvp;
         this.imagenes = Collections.singletonList(imagenes);
     }
+
+
 
 }

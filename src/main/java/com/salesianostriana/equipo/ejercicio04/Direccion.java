@@ -10,12 +10,18 @@ import javax.persistence.Id;
 @Entity
 @Data
 @NoArgsConstructor
-public class Categoria {
+public class Direccion {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private String nombre;
+    private String tipoVia;
+    private String linea1;
+    private String linea2;
+    private Integer cp;
+    private Integer poblacion;
+    private String provincia;
 
 }
+
