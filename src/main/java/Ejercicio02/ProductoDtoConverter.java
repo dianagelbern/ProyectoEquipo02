@@ -1,4 +1,4 @@
-package com.salesianostriana.equipo.ejercicio04;
+package Ejercicio02;
 
 import org.springframework.stereotype.Component;
 
