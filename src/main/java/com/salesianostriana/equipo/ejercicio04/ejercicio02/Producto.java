@@ -1,4 +1,4 @@
-package com.salesianostriana.equipo.ejercicio04;
+package com.salesianostriana.equipo.ejercicio04.ejercicio02;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

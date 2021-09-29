@@ -1,4 +1,4 @@
-package com.salesianostriana.equipo.ejercicio04;
+package com.salesianostriana.equipo.ejercicio04.ejercicio01;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,12 +10,15 @@ import javax.persistence.Id;
 @Entity
 @Data
 @NoArgsConstructor
-public class Categoria {
+public class Curso {
 
     @Id
     @GeneratedValue
     private Long id;
 
     private String nombre;
-
+    private String tipo;
+    private String tutor;
+    private String aula;
 }
+
