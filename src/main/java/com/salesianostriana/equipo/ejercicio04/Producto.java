@@ -4,6 +4,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Collections;
+import java.util.List;
 
 @Entity
 @Data
@@ -20,7 +22,7 @@ public class Producto {
     private double pvp;
 
     @ElementCollection
-    private String imagenes;
+    private List<String> imagenes;
 
     @ManyToOne
     private Categoria categoria;
@@ -30,7 +32,7 @@ public class Producto {
         this.nombre = nombre;
         this.descuento = descuento;
         this.pvp = pvp;
-        this.imagenes = imagenes;
+        this.imagenes = Collections.singletonList(imagenes);
     }
 
 }
